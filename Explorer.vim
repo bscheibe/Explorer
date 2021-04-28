@@ -33,6 +33,14 @@ endif
 
 
 let t:explorer_shown=0
+autocmd TabEnter * call InitVar()
+function! InitVar()
+        if !exists('t:explorer_shown')
+                let t:explorer_shown=0
+        endif
+endfunction
+
+
 function! ToggleExplorer()
         if t:explorer_shown
                 " Assumes the top-left-most window is the explorer
