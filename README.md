@@ -1,2 +1,2 @@
 # Explorer
-A directory listing plugin for Vim.
+A directory listing window plugin for Vim.
