@@ -12,7 +12,7 @@ let g:netrw_bufsettings='wrap nonu'
 
 
 " Macro for toggling the explorer through the keyboard.
-map - :call ToggleExplorer() <CR>
+map <silent> - :call ToggleExplorer() <CR>
 
 
 " Configure based on our current environment.
