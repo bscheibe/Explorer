@@ -1,6 +1,6 @@
 """ Explorer
 """ Bruce Scheibe
-""" Manage and display a diretory listing as normally seen in many IDEs using Netrw.
+""" Manage and display a dynamic diretory listing.
 
 
 " Set up a few Netrw settings to allow for the behavior we want.
