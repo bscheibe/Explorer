@@ -15,6 +15,10 @@ let g:netrw_bufsettings='wrap nonu'
 map <silent> - :call ToggleExplorer() <CR>
 
 
+" Vim command
+ab explorer call ToggleExplorer()
+
+
 " Configure based on our current environment.
 if has("gui_running")
         let g:netrw_browse_split=3
