@@ -3,6 +3,10 @@
 """ Manage and display a dynamic diretory listing.
 
 
+" Required behavior.
+set autochdir
+
+
 " Set up a few Netrw settings to allow for the behavior we want.
 let g:netrw_banner=0
 let g:netrw_winsize=15
