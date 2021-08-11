@@ -12,6 +12,7 @@ let g:netrw_banner=0
 let g:netrw_winsize=15
 let g:netrw_altv=2
 let g:netrw_preview=1
+let g:netrw_browse_split=3
 let g:netrw_bufsettings='wrap nonu'
 
 
@@ -25,7 +26,6 @@ ab explorer call ToggleExplorer()
 
 " Configure based on our current environment.
 if has("gui_running")
-        let g:netrw_browse_split=3
         let g:netrw_liststyle=3
         set mouse=n " May not need this.
         au FileType netrw nmap <buffer> <LeftMouse> <LeftMouse> <CR>
@@ -33,7 +33,6 @@ if has("gui_running")
         nmap <buffer> <LeftMouse> <LeftMouse> <CR> " Testing
         amenu Explorer.Toggle\ Explorer\ \ \ \ \ - :call ToggleExplorer() <CR>
 else
-        let g:netrw_browse_split=4
         let g:netrw_liststyle=4
         " Refresh the directory listing when changing buffers.
         autocmd BufWinEnter * call UpdateExplorer()
